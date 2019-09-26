@@ -10,7 +10,7 @@ const JsDocPlugin = require('jsdoc-webpack-plugin-v2');
 const filename = 'server.js';
 const cwd = process.cwd();
 const json = require(path.resolve(cwd, './package')); // eslint-disable-line
-const entry = json.name.includes('webserver') || json.name.includes('docs')
+const entry = json.name.includes('app')
     ? './index.jsx' : './index.js';
 
 module.exports = (env, argv) => {
