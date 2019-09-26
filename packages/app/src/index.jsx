@@ -3,9 +3,10 @@ import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
 import ejs from 'ejs';
-import render from '@krupnik/render';
+// import render from '@krupnik/render';
 import proxy from 'express-http-proxy';
 import server from './services/socket/server';
+import render from './services/render';
 import App from './components/App';
 import routes from './components/routes';
 import {
